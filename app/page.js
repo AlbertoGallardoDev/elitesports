@@ -1,95 +1,71 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './page.module.css';
+import data from '../public/home.json';
+import VideoComponent from './components/VideoComponent';
 
 export default function Home() {
+  // Calcular minId y maxId una vez
+  const ids = data.map((item) => item.id);
+  const minId = Math.min(...ids);
+  const maxId = Math.max(...ids);
+
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {data.map((item) => (
+        <div key={item.id} className="container my-4" style={{ width: '75%' }}>
+          <div className="row">
+            {item.order === 1 ? (
+              <>
+                <div className="col-12 col-md-6">
+                  <VideoComponent videoUrl={item.videoUrl} />
+                </div>
+                <div
+                  className="col-12 col-md-6 d-flex flex-column justify-content-around"
+                  style={{ minHeight: '300px' }}
+                >
+                  <h2 className={styles.h2}>{item.title}</h2>
+                  <p className={styles.text}>{item.description}</p>
+                  <a href={item.link} className="btn-custom align-self-start">
+                    {item.button}
+                  </a>
+                </div>
+              </>
+            ) : (
+              <>
+                <div
+                  className="col-12 col-md-6 text-end d-flex flex-column justify-content-around"
+                  style={{ minHeight: '300px' }}
+                >
+                  <h2 className={styles.h2}>{item.title}</h2>
+                  <p className={styles.text}>{item.description}</p>
+                  <a href={item.link} className="btn-custom align-self-end">
+                    {item.button}
+                  </a>
+                </div>
+                <div className="col-12 col-md-6">
+                  <VideoComponent videoUrl={item.videoUrl} />
+                </div>
+                {item.id === 1 && (
+                  <div className={`${styles.title2} my-4 text-center p-5`}>
+                    <h2 className={`${styles.h2} container text-center mb-5`}>
+                      Explore Our Exciting Upcoming
+                      <br />
+                      Trips for the 2024-25 Season!
+                    </h2>
+                    <span>
+                      Check out our featured trips below to find the perfect match for your basketball passion, and secure your spot today!
+                    </span>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+          {/* Mostrar <hr> solo si el item no es el primero ni el último */}
+          {(item.id !== minId && item.id !== maxId) && (
+            <hr className={`${styles.hr} m-5`} />
+          )}
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      ))}
     </div>
   );
 }

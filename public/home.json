@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "NBA Trips from Switzerland to the USA",
+        "description": "Witness the Greatest Players and Explore Iconic Cities.",
+        "button": "View Upcoming Trips",
+        "link": "/upcoming-trips",
+        "videoUrl": "/images/home/1.mp4",
+        "order": 0
+    },
+    {
+        "id": 2,
+        "title": "Get ready for a West Coast adventure!",
+        "description": "Experience the energy of Los Angeles with a live Lakers game, followed by San Francisco, where you’ll witness the electrifying Warriors at Chase Center. Along the way, enjoy the stunning California coastline, explore the Golden Gate Bridge, and soak in the lively culture of both cities.",
+        "button": "More details",
+        "link": "/upcoming-trips/3",
+        "videoUrl": "/images/home/2.mp4",
+        "order": 1
+    },
+    {
+        "id": 3,
+        "title": "Discover the beauty of the East Coast!",
+        "description": "Visit iconic cities like New York and Boston, filled with rich history, amazing food, and stunning architecture.",
+        "button": "More details",
+        "link": "/upcoming-trips/4",
+        "videoUrl": "/images/home/3.mp4",
+        "order": 0
+    },
+    {
+        "id": 4,
+        "title": "Visit NYC, The City That Never Sleeps",
+        "description": "Witness the New York Knicks play at the iconic Madison Square Garden. Immerse yourself in the electric atmosphere of the city as you explore must-see landmarks like Times Square, the Empire State Building, and Central Park. Next, we head to Brooklyn, where you'll catch the Brooklyn Nets in action and cross the scenic Brooklyn Bridge.",
+        "button": "More details",
+        "link": "/upcoming-trips/1",
+        "videoUrl": "/images/home/4.mp4",
+        "order": 1
+    }
+]

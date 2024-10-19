@@ -1,0 +1,94 @@
+[
+    {
+        "id": "1",
+        "title": "New York & Brooklyn",
+        "image": "/images/trips/1.png",
+        "description": "Dive into the heart of New York City for an unforgettable week of NBA action, iconic sights, and endless excitement! This is your chance to see the Knicks and Nets battle it out on their home courts while exploring the vibrant city that never sleeps.",
+        "date": "25-31 January 2025",
+        "datemenu": "Jan 2025",
+        "included": [
+            "Roundtrip from Zürich to New York with a big checked baggage",
+            "Accommodation in 3 or 4-Star Hotels in double rooms",
+            "A responsible will travel with you to provide 24/7 support throughout the trip",
+            "2 NBA tickets to watch the Knicks and the Nets (upper level)",
+            "Guided city tours and cultural experiences",
+            "Travel insurance",
+            "Additional sports events (NCAA, NHL) can be organized",
+            "Free time to explore the city"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "New York & Boston",
+        "image": "/images/trips/2.png",
+        "description": "From the buzzing streets of NYC to Boston’s historic charm, get ready for a double dose of East Coast basketball and culture. This trip features three NBA games across two cities and endless opportunities for adventure!",
+        "date": "2-8 February 2025",
+        "datemenu": "Feb 2025",
+        "included": [
+            "All flights from Zürich to New York & Boston",
+            "Accommodation in 3 or 4-Star Hotels in double rooms",
+            "A responsible will travel with you to provide 24/7 support throughout the trip",
+            "3 NBA tickets to watch the Knicks, the Nets and the Celtics (upper level)",
+            "Guided city tours and cultural experiences",
+            "Travel insurance",
+            "Additional sports events (NCAA, NHL) can be organized",
+            "Free time to explore the city"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "San Francisco & Los Angeles",
+        "image": "/images/trips/3.png",
+        "description": "Hit the West Coast for some California dreamin'! From San Francisco’s iconic bridges to LA’s sunny beaches, this trip has it all—sunshine, sightseeing, and a front-row seat to NBA greatness.",
+        "date": "23 February - 1 March 2025",
+        "datemenu": "Feb 2025",
+        "included": [
+            "All flights from Zürich to San Francisco & Los Angeles",
+            "Accommodation in 3 or 4-Star Hotels in double rooms",
+            "A responsible will travel with you to provide 24/7 support throughout the trip",
+            "2 NBA tickets to watch the Warriors and the Lakers (upper level)",
+            "Guided city tours and cultural experiences",
+            "Travel insurance",
+            "Additional sports events (NCAA, NHL) can be organized",
+            "Free time to explore the city",
+            "Car rental for our stay"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Chicago & Boston",
+        "image": "/images/trips/4.png",
+        "description": "Discover two of America’s most beloved sports cities in one unforgettable trip! Experience the heart of Chicago and the historic charm of Boston, with NBA action and city tours that showcase the best of both.",
+        "date": "23 February - 1 March 2025",
+        "datemenu": "Mar 2025",
+        "included": [
+            "All flights from Zürich to Chicago & Boston",
+            "Accommodation in 3 or 4-Star Hotels in double rooms",
+            "A responsible will travel with you to provide 24/7 support throughout the trip",
+            "2 NBA tickets to watch the Bulls vs Pacers and the Celtics vs OKC (upper level)",
+            "Guided city tours and cultural experiences",
+            "Travel insurance",
+            "Additional sports events (NCAA, NHL) can be organized",
+            "Free time to explore the city"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Los Angeles & San Francisco",
+        "image": "/images/trips/5.png",
+        "description": "From LA’s Hollywood glamour to San Francisco’s tech-savvy vibe, this West Coast adventure is a basketball fan’s dream come true. See two exciting NBA matchups while exploring California’s most iconic spots!",
+        "date": "15-21 March 2025",
+        "datemenu": "Jan 2025",
+        "included": [
+            "All flights from Zürich to Los Angeles & San Francisco",
+            "Accommodation in 3 or 4-Star Hotels in double rooms",
+            "A responsible will travel with you to provide 24/7 support throughout the trip",
+            "2 NBA tickets to watch the Lakers vs Suns and Warriors vs Bucks (upper level)",
+            "Guided city tours and cultural experiences",
+            "Travel insurance",
+            "Additional sports events (NCAA, NHL) can be organized",
+            "Free time to explore the city",
+            "Car rental for our stay"
+        ]
+    }
+]

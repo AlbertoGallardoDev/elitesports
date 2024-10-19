@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Trip 1 - New York & Brooklyn",
+      "dates": "25-31 Jan 2025"
+    },
+    {
+      "id": 2,
+      "name": "Trip 2 - New York & Boston",
+      "dates": "2-8 Feb 2025"
+    },
+    {
+      "id": 3,
+      "name": "Trip 3 - Los Angeles & San Francisco",
+      "dates": "23 Feb - 1 Mar 2025"
+    },
+    {
+      "id": 4,
+      "name": "Trip 4 - Chicago & Boston",
+      "dates": "7-13 Mar 2025"
+    },
+    {
+      "id": 5,
+      "name": "Trip 5 - San Francisco & Los Angeles",
+      "dates": "15-21 Mar 2025"
+    }
+  ]
+  

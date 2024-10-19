@@ -1,0 +1,79 @@
+/* Header.module.css */
+
+.header {
+    padding: 10px 20px;
+    background-color: #002366;
+}
+
+.menuBar {
+    display: flex;
+    align-items: center;
+}
+
+.menuToggle {
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.navMenuOpen {
+    left: 0;
+}
+
+.closeMenu {
+    margin: 10px;
+    font-size: 40px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navMenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navMenu ul li {
+    margin: 20px 10px;
+}
+
+.navMenu ul li {
+    color: black !important;
+    font-size: 18px;
+}
+
+.socialIcons {
+    margin: 20px 10px;
+}
+
+.socialIcons a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #002366;
+}
+
+.pointer {
+    cursor: pointer;
+}

@@ -10,18 +10,81 @@
   }
 }
 
+/* styles/fonts.css */
+
+/* SFNSDisplay */
+@font-face {
+  font-family: 'SFNSDisplay';
+  src: url('./fonts/SFNSDisplay-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFNSDisplay';
+  src: url('./fonts/SFNSDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Define todas las demás variantes de la misma forma */
+@font-face {
+  font-family: 'SFNSDisplay';
+  src: url('./fonts/SFNSDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFNSDisplay';
+  src: url('./fonts/SFNSDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SFNSText */
+@font-face {
+  font-family: 'SFNSText';
+  src: url('./fonts/SFNSText-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFNSText';
+  src: url('./fonts/SFNSText-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
+  font-family: 'SFNSDisplay', sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/images/bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Para que la capa cubra todo el fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b469969; /* Capa blanquecina */
+  pointer-events: none; /* Permite que los clics pasen a través de la capa */
+  z-index: -1; /* Asegura que esté detrás del contenido del body */
 }
 
 * {
@@ -31,8 +94,25 @@ body {
 }
 
 a {
-  color: inherit;
+  color: black;
+  text-decoration: none !important;
+}
+
+.btn-custom{
+  background-color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
   text-decoration: none;
+  color: #133B7E;
+  font-weight: bold;
+}
+
+.bgAzul{
+  background-color: #002366;
+}
+
+.subtitle{
+  color: #d3d0d0;
 }
 
 @media (prefers-color-scheme: dark) {
