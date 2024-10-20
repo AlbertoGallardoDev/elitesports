@@ -22,9 +22,9 @@ export default function Contact() {
           <div className="p-5 pb-0">
             <div className="d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center gap-2">
-                <a href="mailto:info@elitesports.com" className="d-flex align-items-center text-decoration-none text-white">
+                <a href="mailto:armando@elitesportstrips.com" className="d-flex align-items-center text-decoration-none text-white">
                   <Email className="me-2" style={{ fontSize: 30 }} />
-                  <span>info@elitesports.com</span>
+                  <span>armando@elitesportstrips.com</span>
                 </a>
               </div>
               <div className="d-flex gap-3">
