@@ -1,4 +1,4 @@
-'use client';
+'use client'; // Agrega esta línea al inicio del archivo
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
@@ -25,6 +25,10 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const toggleTripsDropdown = () => {
     setIsTripsDropdownOpen(!isTripsDropdownOpen);
   };
@@ -39,12 +43,14 @@ export default function Header() {
         </div>
 
         <div>
-          <Image
-            src="/images/logo-blanco.png"
-            alt="Elite Sports Trips Logo"
-            width={114}
-            height={75}
-          />
+          <Link href="/" className="fw-bold">
+            <Image
+              src="/images/logo-blanco.png"
+              alt="Elite Sports Trips Logo"
+              width={114}
+              height={75}
+            />
+          </Link>
         </div>
         <div></div>
       </div>
@@ -57,12 +63,14 @@ export default function Header() {
         </button>
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className="fw-bold" onClick={closeMenu}>
+              Home
+            </Link>
           </li>
           <li>
             {/* Dropdown para "Upcoming Trips" */}
             <div className={styles.dropdown}>
-              <p className={styles.pointer} onClick={toggleTripsDropdown} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <p className={`${styles.pointer} fw-bold`} onClick={toggleTripsDropdown} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 Upcoming Trips
                 <FontAwesomeIcon
                   icon={isTripsDropdownOpen ? faChevronUp : faChevronDown}
@@ -71,13 +79,13 @@ export default function Header() {
               {isTripsDropdownOpen && (
                 <ul className={styles.dropdownMenu}>
                   <li>
-                    <Link href={`/upcoming-trips`}>
+                    <Link href={`/upcoming-trips`} style={{ fontSize: 18 }} onClick={closeMenu}>
                       All Trips
                     </Link>
                   </li>
                   {trips.map((trip) => (
                     <li key={trip.id}>
-                      <Link href={`/upcoming-trips/${trip.id}`}>
+                      <Link href={`/upcoming-trips/${trip.id}`} style={{ fontSize: 18 }} onClick={closeMenu}>
                         Trip {trip.id} - {trip.title} - {trip.datemenu}
                       </Link>
                     </li>
@@ -87,10 +95,14 @@ export default function Header() {
             </div>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" className="fw-bold" onClick={closeMenu}>
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" className="fw-bold" onClick={closeMenu}>
+              Contact
+            </Link>
           </li>
         </ul>
         <div className={styles.socialIcons}>

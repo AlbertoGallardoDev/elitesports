@@ -30,10 +30,6 @@
 .faq-section{
     background-color: #133B7E;
 }
-.faq-question:hover {
-    color: #d3d0d0;
-    /* Cambia el color en hover */
-}
 
 .faq-answer {
     max-height: 0;

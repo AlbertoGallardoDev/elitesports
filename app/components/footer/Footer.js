@@ -15,7 +15,6 @@ const Footer = () => {
                     />
                 </div>
 
-                {/* Navegación */}
                 <div className='d-flex flex-column justify-content-around'>
                     <nav className="w-100">
                         <Link href="/" legacyBehavior><a className="text-white px-5">Home</a></Link>
@@ -26,7 +25,7 @@ const Footer = () => {
 
                     <div className="d-flex flex-column">
                         <p className="mb-0 ps-5">
-                        Zürich, Switzerland
+                        Switzerland
                         </p>
                     </div>
 

@@ -20,7 +20,7 @@ const TripDetails = () => {
         <div className="row m-0 bgAzul">
           <div className='w-50 p-4 text-light d-flex flex-column justify-content-around'>
             <div>
-              <h2 style={{ fontSize: '60px' }}>{trip.title}</h2>
+              <h2 style={{ fontWeight: 'bold', fontSize: '60px' }}>{trip.title}</h2>
               <p className="subtitle">{trip.date}</p>
             </div>
             <span className="separador"></span>
@@ -36,10 +36,11 @@ const TripDetails = () => {
             </ul>
           </div>
         </div>
-        <div className="py-5 pb-0 d-flex align-items-center justify-content-center">
-          <a href="mailto:info@elitesports.com" style={{ fontSize: 30 }} className="d-flex align-items-center text-decoration-none text-white">
-            <Email className="me-2" style={{ fontSize: 40 }}/>
-            <span>info@elitesports.com</span>
+        <div className="py-5 pb-0 d-flex flex-column align-items-center justify-content-center">
+          <p className="text-light" style={{ fontSize: 30 }}>Are you interested in the trip? Contact us for more information in the email below</p>
+          <a href="mailto:armando@elitesportstrips.com" style={{ fontSize: 30 }} className="d-flex align-items-center text-decoration-none text-white">
+            <Email className="me-2" style={{ fontSize: 25 }}/>
+            <span className="fw-bold" style={{ fontSize: 25 }}>armando@elitesportstrips.com</span>
           </a>
         </div>
       </div>

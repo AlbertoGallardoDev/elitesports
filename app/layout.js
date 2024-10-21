@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Elite Sports",
-  description: "Descripción de tu sitio web",
+  title: "Elite Sports Trips",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

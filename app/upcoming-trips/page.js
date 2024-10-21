@@ -5,7 +5,7 @@ import tripsData from '../../public/trips.json'; // Asegúrate de colocar la rut
 const HomePage = () => {
   return (
     <div className="container">
-      <h2 className="text-center my-4 text-light pt-5 pb-2" style={{ fontSize: '60px'}}>Upcoming Trips</h2>
+      <h2 className="text-center my-4 text-light pt-5 pb-2" style={{ fontWeight: 'bold', fontSize: '60px'}}>Upcoming Trips</h2>
       <div className="row px-5">
         {tripsData.map((trip, index) => (
           <div
