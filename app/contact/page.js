@@ -18,17 +18,17 @@ export default function Contact() {
   return (
     <>
       <section id="cuestions">
-        <div className="container">
+        <div className="container contactBox">
           <div className="p-5 pb-0">
-            <h2 className="text-light">Contact us</h2>
-            <div className="d-flex justify-content-between align-items-center">
+            <h2 className="text-light title">Contact us</h2>
+            <div className="rrss d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center gap-2">
                 <a href="mailto:armando@elitesportstrips.com" className="d-flex align-items-center text-decoration-none text-white">
                   <Email className="me-2" style={{ fontSize: 30 }} />
                   <span className="fw-bold">armando@elitesportstrips.com</span>
                 </a>
               </div>
-              <div className="d-flex gap-3">
+              <div className="rrss2 d-flex gap-3">
                 <a href="https://www.instagram.com/elitesportstrips" target="_blank" rel="noopener noreferrer" className="text-white">
                   <Instagram style={{ fontSize: 40 }} />
                 </a>
@@ -41,7 +41,7 @@ export default function Contact() {
 
           {questions.map((quiz, quizIndex) => (
             <div key={quizIndex} className="faq-section m-5 p-5">
-              <h2 className='text-light'>{quiz.title}</h2>
+              <h2 className='titleFaq text-light'>{quiz.title}</h2>
 
               {quiz.questions.map((faq, questionIndex) => (
                 <div key={questionIndex} className={`faq ${openFaq[quizIndex] === questionIndex ? 'open' : ''}`}>

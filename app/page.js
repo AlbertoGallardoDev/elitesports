@@ -10,22 +10,21 @@ export default function Home() {
   const maxId = Math.max(...ids);
 
   return (
-    <div className={styles.page}>
+    <div className={`container my-4 w-100`}>
       {data.map((item) => (
-        <div key={item.id} className="container my-4" style={{ width: '75%' }}>
+        <div key={item.id} className="itemBox">
           <div className="row">
             {item.order === 1 ? (
               <>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-12 col-md-6">
                   <VideoComponent videoUrl={item.videoUrl} />
                 </div>
                 <div
                   className="col-12 col-md-6 d-flex flex-column justify-content-around"
-                  style={{ minHeight: '300px' }}
                 >
                   <h2 className={styles.h2}>{item.title}</h2>
                   <p className={styles.text}>{item.description}</p>
-                  <a href={item.link} className="btn-custom align-self-start">
+                  <a href={item.link} className={`${styles.button1} btn-custom align-self-start`}>
                     {item.button}
                   </a>
                 </div>
@@ -34,11 +33,10 @@ export default function Home() {
               <>
                 <div
                   className="col-12 col-md-6 text-end d-flex flex-column justify-content-around"
-                  style={{ minHeight: '300px' }}
                 >
                   <h2 className={styles.h2}>{item.title}</h2>
                   <p className={styles.text}>{item.description}</p>
-                  <a href={item.link} className="btn-custom align-self-end">
+                  <a href={item.link} className={`${styles.button2} btn-custom align-self-end`}>
                     {item.button}
                   </a>
                 </div>

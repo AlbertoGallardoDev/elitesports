@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className="container d-flex justify-content-between">
+      <div className="container-fluid d-flex justify-content-between">
         <div className={styles.menuBar}>
           <button onClick={toggleMenu} className={styles.menuToggle}>
             &#9776;
@@ -52,7 +52,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div></div>
+        <div className={styles.cajaVacia}></div>
       </div>
 
       <nav

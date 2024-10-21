@@ -1,24 +1,59 @@
-.h2{
+.h2 {
     font-size: 55px;
     color: white;
     font-weight: bold;
 }
 
-.title2{
+.title2 {
     background-color: #002366;
-    border-radius: 20px;
 }
 
-.title2 span{
+.title2 span {
     color: #d3d0d0;
 }
 
-.text{
+.text {
     font-size: 14px;
     color: white;
 }
 
-.hr{
-    border-top: 2px solid; /* Cambia el grosor a 5px */
+.hr {
+    border-top: 2px solid;
+    /* Cambia el grosor a 5px */
     color: white;
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+    .h2 {
+        font-size: 28px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .text{
+        text-align: center
+    }
+    .button1{
+        margin: 1rem 0;
+        align-self: center !important;
+    }
+    .button2{
+        margin-bottom: 2rem;
+        align-self: center !important;
+    }
+    .hr{
+        margin: 0%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 1400px) {
+
 }

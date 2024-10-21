@@ -14,7 +14,7 @@ const TripDetails = () => {
   }
 
   return (
-    <div className="container py-5">
+    <div className="container-fluid py-5">
       <div className="row mx-auto" style={{ width: '90%' }}>
         <img className="m-0 p-0" src={trip.image} alt={trip.title} />
         <div className="row m-0 bgAzul">
@@ -37,7 +37,7 @@ const TripDetails = () => {
           </div>
         </div>
         <div className="py-5 pb-0 d-flex flex-column align-items-center justify-content-center">
-          <p className="text-light" style={{ fontSize: 30 }}>Are you interested in the trip? Contact us for more information in the email below</p>
+          <p className="text-light text-center" style={{ fontSize: 30 }}>Are you interested in the trip? Contact us for more information in the email below</p>
           <a href="mailto:armando@elitesportstrips.com" style={{ fontSize: 30 }} className="d-flex align-items-center text-decoration-none text-white">
             <Email className="me-2" style={{ fontSize: 25 }}/>
             <span className="fw-bold" style={{ fontSize: 25 }}>armando@elitesportstrips.com</span>

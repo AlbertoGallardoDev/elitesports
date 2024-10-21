@@ -13,3 +13,22 @@
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media (min-width: 100px) and (max-width: 768px) {
+    .footerBox{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links{
+        text-align: center;
+        padding: 0 !important;
+    }
+    .center{
+        text-align: center !important;
+    }
+}
