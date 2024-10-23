@@ -18,7 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Unforgettable NBA Experiences from Switzerland | Elite Sports Trips",
+  title: "Elite Sports Trips",
   description: "Experience live NBA action with Elite Sports Trips. Travel from Switzerland to iconic U.S. cities, watch the Lakers, Warriors, Knicks, and Nets, and explore landmarks like the Golden Gate Bridge and Times Square.",
 };
 
