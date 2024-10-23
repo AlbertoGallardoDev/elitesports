@@ -45,8 +45,21 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 1495px) {
+@media (min-width: 500px) and (max-width: 768px) {
     .h2 {
         font-size: 30px;
+    }
+}
+
+/* Adaptado pantallas pc pequeñas */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .h2 {
+        font-size: 25px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .title2 span {
+        font-size: 12px;
     }
 }
