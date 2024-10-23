@@ -1,0 +1,69 @@
+/* Estilos generales */
+.contentContainer {
+    width: 90%;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bgAzul {
+    background-color: #002366;
+}
+
+.textContainer {
+    width: 100%;
+    padding: 2rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.includedContainer {
+    width: 100%;
+    padding: 2rem;
+}
+
+.includedTitle {
+    font-size: 20px;
+}
+
+.contactContainer {
+    padding-bottom: 0;
+    padding-top: 5rem;
+}
+
+.contactText {
+    font-size: 30px;
+}
+
+.contactEmail {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Adaptación para pantallas móviles */
+@media (min-width: 100px) and  (max-width: 1495px) {
+    .bgAzul{
+        display: block !important;
+    }
+    .bgAzul > div {
+        width: 100% !important;
+    }
+    .textContainer, .includedContainer {
+        width: 100%; /* Hacer que ocupen toda la fila en móviles */
+        padding: 1rem 0 !important;
+        display: block !important;
+    }
+
+    .title {
+        font-size: 40px; /* Reducir el tamaño del título en móviles */
+    }
+
+    .includedTitle, .contactEmail, .contactText {
+        font-size: 18px; /* Reducir el tamaño de los textos en móviles */
+    }
+}

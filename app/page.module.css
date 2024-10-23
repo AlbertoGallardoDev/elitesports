@@ -45,15 +45,8 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 1495px) {
     .h2 {
         font-size: 30px;
     }
-}
-@media (max-width: 1000px) {
-
-}
-
-@media (max-width: 1400px) {
-
 }

@@ -8,7 +8,7 @@ export default function About() {
 
             {/* Section One */}
             <section>
-                <div className="container caja1 d-flex w-75">
+                <div className="container-fluid caja1 d-flex w-75">
                     <div className="py-5 my-5 d-flex flex-column justify-content-between">
                         <p className="subtitle">
                             Our Story
@@ -18,14 +18,14 @@ export default function About() {
                             Elite Sports Trips was born from a lifelong love of basketball and the thrill of travel. Our founder, Armando Choque, a former professional basketball player, experienced firsthand the electrifying energy of live NBA games and the excitement of exploring new cities. After years of traveling to the US for multiple NBA games, he wanted to create a tailored travel experience for fellow basketball fans.
                         </p>
                     </div>
-                    <div className="p-5">
+                    <div className="p-5 img-armando-1">
                         <img width={300} src="/images/a1.png" alt="Elite Sports Story" />
                     </div>
                 </div>
             </section>
 
             <section id="section-two">
-                <div className="container caja2">
+                <div className="container-fluid caja2">
                     <div className="bgBlanco">
                         <h2 className="fw-bold" style={{ fontSize: 50}}>Our vision</h2>
                         <p>

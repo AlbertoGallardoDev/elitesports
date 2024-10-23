@@ -14,7 +14,7 @@
     text-decoration: underline;
 }
 
-@media (min-width: 100px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 900px) {
     .footerBox{
         display: flex !important;
         justify-content: space-around !important;

@@ -64,10 +64,35 @@ section{
 }
 
 /* Para pantallas más pequeñas, como móviles */
-@media (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 1200px) {
+    .caja1{
+        width: 100% !important;
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 0% !important;
+        margin: 0% !important; 
+    }  
+    .caja1 > div{
+        margin: 0 !important;
+    }
+    .caja1 h2{
+        font-size: 37px !important;
+        margin-bottom: 1rem;
+    }
+    .img-armando-1{
+        padding: 1rem  0% !important;
+    }
+    .caja1 div:nth-child(1){
+        padding: 2rem !important;
+    }
     .caja2 {
+        padding: 0% !important;
+        text-align: center;
         grid-template-columns: 1fr;
         /* Una sola columna */
+    }
+    .caja2 h2{
+        font-size: 35px !important;
     }
 }
 
