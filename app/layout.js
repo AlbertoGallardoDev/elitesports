@@ -26,6 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta property="og:title" content="Elite Sports Trips" />
+        <meta property="og:description" content="Elite Sports Trips offers unforgettable NBA travel experiences from Switzerland to the USA." />
+        <meta property="og:image" content="https://elitesportstrips.com/favicon.ico" />
+        <meta property="og:url" content="https://elitesportstrips.com" />
+
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
