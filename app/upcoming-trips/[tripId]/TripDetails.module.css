@@ -46,7 +46,7 @@
 }
 
 /* Adaptación para pantallas móviles */
-@media (min-width: 100px) and  (max-width: 1495px) {
+@media (min-width: 100px) and  (max-width: 768px) {
     .bgAzul{
         display: block !important;
     }

@@ -25,7 +25,7 @@ const ContactForm = ({ tripTitle }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="container mt-5">
+    <form onSubmit={handleSubmit} className="container-fluid mt-5">
       <h2>Are you interested in joining us?</h2>
 
       <div className="form-group">

@@ -95,6 +95,11 @@ export default function Header() {
             </div>
           </li>
           <li>
+            <Link href="/foreign-tours" className="fw-bold" onClick={closeMenu}>
+              Foreign Tours
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className="fw-bold" onClick={closeMenu}>
               About
             </Link>

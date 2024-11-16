@@ -7,12 +7,15 @@ const Footer = () => {
         <footer className={`text-white py-5 ${styles.footer}`}>
             <div className={`${styles.footerBox} container-fluid d-flex justify-content-between flex-wrap`}>
                 <div className="d-flex align-items-center mb-3 mb-md-0">
-                    <Image
-                        src="/images/logo-blanco.png"
-                        alt="Elite Sports Trips Logo"
-                        width={274}
-                        height={183}
-                    />
+                    <Link href="/" passHref>
+                        <Image
+                            src="/images/logo-blanco.png"
+                            alt="Elite Sports Trips Logo"
+                            width={244}
+                            height={183}
+                            style={{ cursor: 'pointer' }}
+                        />
+                    </Link>
                 </div>
 
                 <div className={`${styles.center} d-flex flex-column justify-content-around`}>
@@ -25,7 +28,7 @@ const Footer = () => {
 
                     <div className="d-flex flex-column">
                         <p className="mb-2">
-                        Switzerland
+                            Switzerland
                         </p>
                     </div>
 
