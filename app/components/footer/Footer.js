@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={`text-white py-5 ${styles.footer}`}>
             <div className={`${styles.footerBox} container-fluid d-flex justify-content-between flex-wrap`}>
-                <div className="d-flex align-items-center mb-3 mb-md-0">
+                <div className=" align-items-center mb-3 mb-md-0">
                     <Link href="/" passHref>
                         <Image
                             src="/images/logo-blanco.png"
@@ -33,7 +33,25 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="mb-0">© 2024 by Elite Sports Trips</p>
+                        <p className="mb-0" style={{ fontSize: '11px'}}>© 2024 by Elite Sports Trips.
+                            <a
+                                href="https://docs.google.com/document/d/18rtJpyqHUjuC0UPpx7sstDyMJwKDVObpoZJW2ZBt9dM/export?format=pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-underline text-white mx-2"
+                            >
+                                Terms of Service
+                            </a>
+                            and
+                            <a
+                                href="https://docs.google.com/document/d/16b352ULqYAWPfMXMNTmzpWmlloWA-1MGD7xWWfiI7xs/export?format=pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-underline text-white mx-2"
+                            >
+                                Privacy Policy
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

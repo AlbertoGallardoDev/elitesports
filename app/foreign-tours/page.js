@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Foreign() {
     return (
         <>
-            <section id="foreign-tours" className="container p-5 text-white">
+            <section id="foreign-tours" className="container p-md-5 py-5 p-sm-0 text-white">
                 {/* Encabezado principal */}
 
                 <div className="container text-white mt-5">
@@ -46,18 +46,18 @@ export default function Foreign() {
                                 Creating lifetime memories for your players through sports, team bonding, and new countries to discover
                             </h3>
                             <button
-    className="btn btn-outline-light w-lg-auto"
-    style={{
-        backgroundColor: '#38B6FF',
-        borderColor: '#38B6FF',
-        color: 'white',
-        cursor: 'pointer',
-        transition: 'none'
-    }}
-    onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}
->
-    Receive custom team proposal
-</button>
+                                className="btn btn-outline-light w-lg-auto"
+                                style={{
+                                    backgroundColor: '#38B6FF',
+                                    borderColor: '#38B6FF',
+                                    color: 'white',
+                                    cursor: 'pointer',
+                                    transition: 'none'
+                                }}
+                                onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}
+                            >
+                                Receive custom team proposal
+                            </button>
 
                         </div>
                     </div>
@@ -191,10 +191,15 @@ export default function Foreign() {
                 </div>
 
                 {/* Contacto */}
-                <div id="contact-section" className='text-center mt-5'>
-                    <a href="mailto:armando@elitesportstrips.com" className="fs-2 text-white d-flex justify-content-center align-items-center">
+                <div id="contact-section" className="text-center mt-5">
+                    <a
+                        href="mailto:armando@elitesportstrips.com"
+                        className="d-flex flex-wrap justify-content-center align-items-center text-white"
+                    >
                         <Email className="me-2" style={{ fontSize: 30 }} />
-                        <span className="fw-bold">armando@elitesportstrips.com</span>
+                        <span className="fw-bold text-break text-truncate fs-5 fs-md-2">
+                            armando@elitesportstrips.com
+                        </span>
                     </a>
                 </div>
 
