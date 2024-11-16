@@ -22,6 +22,7 @@ const Footer = () => {
                     <nav className={`w-100 ${styles.footerLinks}`}>
                         <Link href="/" legacyBehavior><a className={`w-100 ${styles.links} text-white ps-0 px-5`}>Home</a></Link>
                         <Link href="/upcoming-trips" legacyBehavior><a className={`w-100 ${styles.links} text-white px-5`}>Upcoming trips</a></Link>
+                        <Link href="/foreign-tours" legacyBehavior><a className={`w-100 ${styles.links} text-white px-5`}>Foreign Tours</a></Link>
                         <Link href="/about" legacyBehavior><a className={`w-100 ${styles.links} text-white px-5`}>About</a></Link>
                         <Link href="/contact" legacyBehavior><a className={`w-100 ${styles.links} text-white px-5 mb-2`}>Contact</a></Link>
                     </nav>
